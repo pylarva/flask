@@ -1,5 +1,7 @@
 from flask import Flask, views
+from utils.message import send_msgs
 app = Flask(__name__)
+
 
 # FLASK CBV架构
 
@@ -7,6 +9,7 @@ app = Flask(__name__)
 def auth(func):
     def inner(*args, **kwargs):
         print('before')
+        send_msgs('test...')
         result = func(*args, **kwargs)
         print('after')
         return result

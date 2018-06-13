@@ -18,4 +18,23 @@
     * make_response 返回字符和cookie         
 8. session
     * app.secret_key
-    
+9. 蓝图
+    * pro_flask_simple
+10. 上下文管理   
+    * 前提  
+    1）threading.Local 为每一个单独的进程开辟内存空间  
+    2）flask实现的自定义Local对象用来为协程开辟单独空间  
+    * 请求到来   
+    1）ctx = 封装RequestContext(request, session)     
+    2）ctx放到Local中
+    * 执行视图函数  
+    1）导入request   
+    2）使用request  
+    print（request） --> LocalProxy对象的__str__    
+       request.method --> LocalProxy对象的__getattr__
+       调用_lookup_req_object函数：去Local中将requestContext中获取到
+       再去requestContext中获取request或session
+    * 结束请求  
+    1）ctx.auto_pop()  
+    2）ctx从Local中移除
+       

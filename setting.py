@@ -1,3 +1,9 @@
+MSG_LIST = [
+    'utils.message.email.Email',
+    'utils.message.msg.Msg',
+]
+
+
 class Config(object):
     DEBUG = False
     TESTING = False
