@@ -2,6 +2,8 @@ import functools
 from flask import Flask, render_template, request, redirect, session, url_for
 app = Flask(__name__)
 
+# Hook函数
+
 USER_LIST = {
     1: {'name': 'admin', 'pwd': 'pwd123', 'info': 'WARNING: Do not use the development a production environment.'},
     2: {'name': 'user01', 'pwd': 'user123', 'info': 'WARNING: environment.'}

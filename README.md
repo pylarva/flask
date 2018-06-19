@@ -37,4 +37,18 @@
     * 结束请求  
     1）ctx.auto_pop()  
     2）ctx从Local中移除
+    
+11. 使用DBUtils实现数据库连接池  
+    db_helper
+    
+12. WTForm表单验证
+
+13. 数据库ORM: SQLAchemy
+
+14. 插件
+    * flask-script
+    * flask-migrate  
+    python run.py db init   
+    python run.py db migrate   
+    python run.py db upgrade   
        
