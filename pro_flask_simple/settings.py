@@ -8,7 +8,8 @@ class BaseConfig(object):
     # SESSION_PERMANENT = True  # 如果设置为False，则关闭浏览器session就失效。
     # SESSION_USE_SIGNER = False  # 是否对发送到浏览器上 session:cookie值进行加密
 
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root@172.16.1.141:3306/flask01?charset=utf8"
+    # SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root@172.16.1.141:3306/flask02?charset=utf8"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:root@192.168.2.10:3306/flask02?charset=utf8"
     SQLALCHEMY_POOL_SIZE = 5
     SQLALCHEMY_POOL_TIMEOUT = 30
     SQLALCHEMY_POOL_RECYCLE = -1

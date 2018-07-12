@@ -16,13 +16,14 @@ def users():
     # me = Users(username='xx', email='admin@ss.com')
     # db.session.add(me)
     # db.session.commit()
+    # db.session.close()
 
     # 删除用户
     # db.session.delete(me)
     # db.session.commit()
 
     # 查询用户
-    # peter = Users.query.filter_by(username='xx').first()
-    # print(peter.email)
+    peter = Users.query.filter_by(username='lichengbing').first()
+    print(peter.email)
 
     return render_template('user.html')

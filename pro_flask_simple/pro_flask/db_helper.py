@@ -17,11 +17,12 @@ POOL = PooledDB(
     ping=0,
     # ping MySQL服务端，检查是否服务可用。# 如：0 = None = never, 1 = default = whenever it is requested,
     # 2 = when a cursor is created, 4 = when a query is executed, 7 = always
-    host='172.16.1.141',
+    # host='172.16.1.141',
+    host='192.168.2.10',
     port=3306,
     user='root',
     password='root',
-    database='mysql',
+    database='flask02',
     charset='utf8'
 )
 

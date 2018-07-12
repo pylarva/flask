@@ -5,6 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+# 必须在创建db之前导入所有数据库类到内存
 from .models import *
 
 from .views.account import account
