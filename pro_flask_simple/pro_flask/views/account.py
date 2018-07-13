@@ -26,6 +26,11 @@ def print_request_started(sender, **extra):
 # request_started.connect(print_request_started)
 
 
+@account.route('/', methods=['GET', "POST"])
+def home():
+    return render_template('index.html')
+
+
 @account.route('/login.html', methods=['GET', "POST"])
 def login():
     # obj = SQLHelper()

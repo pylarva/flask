@@ -1,0 +1,9 @@
+actionid: py36
+msg: getenv
+cmdargs: ['/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6', '-m', 'virtualenv', '--python', '/anaconda3/bin/python3.6', 'py36']
+
+Using base prefix '/anaconda3'
+New python executable in /Users/pylarva/github/flask/pro_flask_simple/.tox/py36/bin/python3.6
+Also creating executable in /Users/pylarva/github/flask/pro_flask_simple/.tox/py36/bin/python
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /anaconda3/bin/python3.6

@@ -1,0 +1,4 @@
+00000000000000000000000000000000 /anaconda3/bin/python3.6
+3.1.1 0 0 0
+00000000000000000000000000000000 -r/Users/pylarva/github/flask/pro_flask_simple/test-requirements.txt
+00000000000000000000000000000000 -r/Users/pylarva/github/flask/pro_flask_simple/requirements.txt
